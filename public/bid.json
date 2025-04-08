@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Vintage Guitar",
+    "description": "1965 Fender Stratocaster in excellent condition",
+    "currentBidPrice": 2500.0,
+    "timeLeft": "2 days 14 hours",
+    "bidsCount": 12,
+    "image": "vintage_guitar.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Antique Pocket Watch",
+    "description": "19th century gold pocket watch with intricate engravings",
+    "currentBidPrice": 875.5,
+    "timeLeft": "1 day 6 hours",
+    "bidsCount": 8,
+    "image": "pocket_watch.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Signed First Edition Book",
+    "description": "First edition 'To Kill a Mockingbird' signed by Harper Lee",
+    "currentBidPrice": 1200.0,
+    "timeLeft": "3 days 22 hours",
+    "bidsCount": 15,
+    "image": "book_cover.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Vintage Typewriter",
+    "description": "1930s Remington typewriter in working condition",
+    "currentBidPrice": 325.75,
+    "timeLeft": "12 hours",
+    "bidsCount": 6,
+    "image": "typewriter.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Oil Painting",
+    "description": "Original landscape painting by local artist",
+    "currentBidPrice": 450.0,
+    "timeLeft": "4 days 8 hours",
+    "bidsCount": 9,
+    "image": "painting.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Crystal Chandelier",
+    "description": "Elegant crystal chandelier from early 20th century",
+    "currentBidPrice": 1800.0,
+    "timeLeft": "2 days 3 hours",
+    "bidsCount": 11,
+    "image": "chandelier.jpg"
+  }
+]
