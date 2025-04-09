@@ -1,9 +1,8 @@
 import { use } from "react";
 import { MdFavoriteBorder } from "react-icons/md";
 
-const AcutionProducts = ({ auctionProducts }) => {
+const AcutionProducts = ({ auctionProducts, handleAuctionData }) => {
   const auctionData = use(auctionProducts);
-  console.log(auctionData);
   return (
     <table className="table">
       {/* head */}
@@ -31,7 +30,10 @@ const AcutionProducts = ({ auctionProducts }) => {
             <td className="text-lg">{data.currentBidPrice}$</td>
             <td className="text-lg">{data.timeLeft}</td>
             <th>
-              <button className="cursor-pointer text-red-700 text-xl">
+              <button
+                onClick={() => handleAuctionData(data, data.currentBidPrice)}
+                className="cursor-pointer text-red-700 text-xl"
+              >
                 <MdFavoriteBorder />
               </button>
             </th>
