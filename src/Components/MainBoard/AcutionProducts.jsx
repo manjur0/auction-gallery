@@ -1,4 +1,5 @@
 import { use } from "react";
+import { MdFavoriteBorder } from "react-icons/md";
 
 const AcutionProducts = ({ auctionProducts }) => {
   const auctionData = use(auctionProducts);
@@ -33,7 +34,9 @@ const AcutionProducts = ({ auctionProducts }) => {
             <td>{data.currentBidPrice}$</td>
             <td>{data.timeLeft}</td>
             <th>
-              <button className="btn btn-ghost btn-xs">Love</button>
+              <button className="cursor-pointer text-red-700 ">
+                <MdFavoriteBorder />
+              </button>
             </th>
           </tr>
         </tbody>
