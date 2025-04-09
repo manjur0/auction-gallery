@@ -1,56 +1,57 @@
+
 [
   {
     "id": 1,
-    "title": "Vintage Guitar",
+    "title": "Vintage Leica M3 Camera",
     "description": "1965 Fender Stratocaster in excellent condition",
     "currentBidPrice": 2500.0,
     "timeLeft": "2 days 14 hours",
     "bidsCount": 12,
-    "image": "vintage_guitar.jpg"
+    "image": "https://i.ibb.co/JwWZv438/Bid1-min.png"
   },
   {
     "id": 2,
-    "title": "Antique Pocket Watch",
+    "title": "1965 Gibson SG Standard Electric Guitar",
     "description": "19th century gold pocket watch with intricate engravings",
     "currentBidPrice": 875.5,
     "timeLeft": "1 day 6 hours",
     "bidsCount": 8,
-    "image": "pocket_watch.jpg"
+    "image": "https://i.ibb.co/JwXDyDnT/Bid2-min.png"
   },
   {
     "id": 3,
-    "title": "Signed First Edition Book",
+    "title": "Original Apple Macintosh 128K (1984)",
     "description": "First edition 'To Kill a Mockingbird' signed by Harper Lee",
     "currentBidPrice": 1200.0,
     "timeLeft": "3 days 22 hours",
     "bidsCount": 15,
-    "image": "book_cover.jpg"
+    "image": "https://i.ibb.co/SwTscW3K/Bid3-min.png"
   },
   {
     "id": 4,
-    "title": "Vintage Typewriter",
+    "title": "Rolex Submariner 16610",
     "description": "1930s Remington typewriter in working condition",
     "currentBidPrice": 325.75,
     "timeLeft": "12 hours",
     "bidsCount": 6,
-    "image": "typewriter.jpg"
+    "image": "https://i.ibb.co/TxKtbVVd/Bid4-min.png"
   },
   {
     "id": 5,
-    "title": "Oil Painting",
+    "title": "First Edition 'The Great Gatsby' by F. Scott Fitzgerald",
     "description": "Original landscape painting by local artist",
     "currentBidPrice": 450.0,
     "timeLeft": "4 days 8 hours",
     "bidsCount": 9,
-    "image": "painting.jpg"
+    "image": "https://i.ibb.co/ksvPKtSc/Bid6-min.png"
   },
   {
     "id": 6,
-    "title": "Crystal Chandelier",
+    "title": "Banksy Original Screen Print",
     "description": "Elegant crystal chandelier from early 20th century",
     "currentBidPrice": 1800.0,
     "timeLeft": "2 days 3 hours",
     "bidsCount": 11,
-    "image": "chandelier.jpg"
+    "image": "https://i.ibb.co/mC9ptXjf/Bid7-min.png"
   }
 ]
