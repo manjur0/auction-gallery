@@ -2,7 +2,7 @@ import bgimage from "../../assets/Banner-min.jpg";
 const Hero = () => {
   return (
     <div
-      className="hero min-h-[70vh]"
+      className="hero min-h-[80vh]"
       style={{ backgroundImage: `url(${bgimage})` }}
     >
       <div className="container  mx-auto flex  bg-transparent text-white ">
