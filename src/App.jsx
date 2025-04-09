@@ -9,7 +9,9 @@ function App() {
     <div>
       <Navbar />
       <Hero />
-      <MainBoard />
+      <div className="bg-[#C8D4E9]">
+        <MainBoard />
+      </div>
       <Footer />
     </div>
   );
