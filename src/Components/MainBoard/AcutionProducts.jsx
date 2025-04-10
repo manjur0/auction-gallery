@@ -49,7 +49,11 @@ const AcutionProducts = ({
                     isFavorite ? "Remove from favorites" : "Add to favorites"
                   }
                 >
-                  {isFavorite ? <MdFavorite /> : <MdFavoriteBorder />}
+                  {isFavorite ? (
+                    <MdFavorite className="cursor-not-allowed" />
+                  ) : (
+                    <MdFavoriteBorder />
+                  )}
                 </button>
               </th>
             </tr>
