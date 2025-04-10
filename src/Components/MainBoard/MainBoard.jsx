@@ -15,11 +15,9 @@ const MainBoard = () => {
   const [auctionData, setAuctionData] = useState([]);
   const [totalPrice, setTotalPrice] = useState(0);
   const [active, setActive] = useState(false);
-  console.log(active);
 
   const handleAuctionData = (event, price) => {
     // validation multiple time add items
-
     setAuctionData((prev) => [...prev, event]);
     setTotalPrice((prev) => prev + price);
 
@@ -32,10 +30,12 @@ const MainBoard = () => {
   };
   // handle delete
   const handleDelete = (id, price) => {
+    console.log(id, price);
     const updatedAuctionData = auctionData.filter((item) => item.id !== id);
     setAuctionData(updatedAuctionData);
     setTotalPrice((prev) => prev - price);
-    if (auctionData.length === 0) {
+    // price not nagative
+    if (totalPrice <= 0) {
       setTotalPrice(0);
     }
 
@@ -46,7 +46,11 @@ const MainBoard = () => {
     <div className="container mx-auto  py-12 grid grid-cols-4 gap-4 justify-center ">
       <div className=" bg-white rounded-2xl p-5 col-span-3">
         <div className="overflow-x-auto">
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense
+            fallback={
+              <span className="loading loading-bars loading-xl "></span>
+            }
+          >
             <AcutionProducts
               auctionProducts={auctionProducts}
               handleAuctionData={handleAuctionData}
