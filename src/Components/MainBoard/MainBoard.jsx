@@ -32,6 +32,7 @@ const MainBoard = () => {
     console.log("delete");
     const deleteItem = auctionData.filter((item) => item.id !== id);
     setTotalPrice((prev) => prev - price);
+    toast.success("Successfully removed from favorites list!");
     setAuctionData(deleteItem);
   };
   return (
