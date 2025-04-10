@@ -17,6 +17,8 @@ const MainBoard = () => {
   const [active, setActive] = useState(false);
 
   const handleAuctionData = (event, price) => {
+    // validation multiple time add items
+
     setAuctionData((prev) => [...prev, event]);
     setTotalPrice((prev) => prev + price);
 
@@ -29,12 +31,12 @@ const MainBoard = () => {
   };
   // handle delete
   const handleDelete = (id, price) => {
-    console.log("delete");
-    const deleteItem = auctionData.filter((item) => item.id !== id);
+    const updatedAuctionData = auctionData.filter((item) => item.id !== id);
+    setAuctionData(updatedAuctionData);
     setTotalPrice((prev) => prev - price);
     toast.success("Successfully removed from favorites list!");
-    setAuctionData(deleteItem);
   };
+
   return (
     <div className="container mx-auto  py-12 grid grid-cols-4 gap-4 justify-center ">
       <div className=" bg-white rounded-2xl p-5 col-span-3">

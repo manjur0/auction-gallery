@@ -1,7 +1,6 @@
 import { MdOutlineFavoriteBorder } from "react-icons/md";
 <MdOutlineFavoriteBorder />;
 const Favorite = ({ auctionData, totalPrice, handleDelete }) => {
-  console.log(auctionData);
   return (
     <div className="bg-white rounded-2xl p-5 text-center">
       <h1 className="flex justify-center items-center gap-3 text-xl font-semibold ">
