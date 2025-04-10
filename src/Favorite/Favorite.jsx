@@ -30,7 +30,7 @@ const Favorite = ({ auctionData, totalPrice, handleDelete }) => {
               />
               <p className="text-left font-semibold py-2  ">{data.title}</p>
               <button
-                onClick={(e) => handleDelete(data.id, data.currentBidPrice)}
+                onClick={() => handleDelete(data.id, data.currentBidPrice)}
                 className="text-red-600 font-semibold py-2 cursor-pointer hover:text-red-800 hover:bg-gray-300 rounded-full px-3"
               >
                 X

@@ -19,6 +19,7 @@ const MainBoard = () => {
   const handleAuctionData = (event, price) => {
     setAuctionData((prev) => [...prev, event]);
     setTotalPrice((prev) => prev + price);
+
     if (auctionData.length === 0 || auctionData.length > 0) {
       toast.success("Successfully added to favorites!");
     } else {
