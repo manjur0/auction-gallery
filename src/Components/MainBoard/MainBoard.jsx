@@ -17,7 +17,6 @@ const MainBoard = () => {
   const [active, setActive] = useState(false);
 
   const handleAuctionData = (event, price) => {
-    console.log(event);
     setAuctionData((prev) => [...prev, event]);
     setTotalPrice((prev) => prev + price);
     if (auctionData.length === 0 || auctionData.length > 0) {
@@ -26,6 +25,13 @@ const MainBoard = () => {
       toast.error("Something went wrong!");
     }
     setActive(event.id);
+  };
+  // handle delete
+  const handleDelete = (id, price) => {
+    console.log("delete");
+    const deleteItem = auctionData.filter((item) => item.id !== id);
+    setTotalPrice((prev) => prev - price);
+    setAuctionData(deleteItem);
   };
   return (
     <div className="container mx-auto  py-12 grid grid-cols-4 gap-4 justify-center ">
@@ -41,7 +47,11 @@ const MainBoard = () => {
         </div>
       </div>
       <div className="col-span-1 ">
-        <Favorite auctionData={auctionData} totalPrice={totalPrice} />
+        <Favorite
+          auctionData={auctionData}
+          totalPrice={totalPrice}
+          handleDelete={handleDelete}
+        />
       </div>
     </div>
   );

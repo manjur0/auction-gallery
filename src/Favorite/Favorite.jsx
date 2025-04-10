@@ -1,6 +1,6 @@
 import { MdOutlineFavoriteBorder } from "react-icons/md";
 <MdOutlineFavoriteBorder />;
-const Favorite = ({ auctionData, totalPrice }) => {
+const Favorite = ({ auctionData, totalPrice, handleDelete }) => {
   console.log(auctionData);
   return (
     <div className="bg-white rounded-2xl p-5 text-center">
@@ -20,7 +20,22 @@ const Favorite = ({ auctionData, totalPrice }) => {
         )}
         {auctionData.map((data) => (
           <div key={data.id}>
-            <p className="text-left font-semibold py-2 ">{data.title}</p>
+            <div className="flex gap-3 justify-between items-center py-2 border-b border-gray-300">
+              <img
+                className="rounded-xl w-10 h-10"
+                width={80}
+                height={80}
+                src={data.image}
+                alt=""
+              />
+              <p className="text-left font-semibold py-2  ">{data.title}</p>
+              <button
+                onClick={(e) => handleDelete(data.id, data.currentBidPrice)}
+                className="text-red-600 font-semibold py-2 cursor-pointer hover:text-red-800 hover:bg-gray-300 rounded-full px-3"
+              >
+                X
+              </button>
+            </div>
           </div>
         ))}
       </div>
