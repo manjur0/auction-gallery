@@ -32,13 +32,11 @@ const AcutionProducts = ({ auctionProducts, handleAuctionData, active }) => {
             <th>
               <button
                 onClick={() => handleAuctionData(data, data.currentBidPrice)}
-                className={"cursor-pointer text-xl"}
+                className={`cursor-pointer text-xl ${
+                  active === data.id ? "text-red-600" : ""
+                }`}
               >
-                {active === data.id ? (
-                  <MdFavoriteBorder className="text-red-700" />
-                ) : (
-                  <MdFavoriteBorder className="text-gray-500" />
-                )}
+                {<MdFavoriteBorder />}
               </button>
             </th>
           </tr>

@@ -15,6 +15,7 @@ const MainBoard = () => {
   const [auctionData, setAuctionData] = useState([]);
   const [totalPrice, setTotalPrice] = useState(0);
   const [active, setActive] = useState(false);
+  console.log(active);
 
   const handleAuctionData = (event, price) => {
     // validation multiple time add items
@@ -34,6 +35,10 @@ const MainBoard = () => {
     const updatedAuctionData = auctionData.filter((item) => item.id !== id);
     setAuctionData(updatedAuctionData);
     setTotalPrice((prev) => prev - price);
+    if (auctionData.length === 0) {
+      setTotalPrice(0);
+    }
+
     toast.success("Successfully removed from favorites list!");
   };
 
